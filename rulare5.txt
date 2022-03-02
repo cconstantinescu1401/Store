@@ -1,0 +1,50 @@
+getstorecurrency
+addcurrency GBP £ 1.10
+addcurrency USD $ 0.82
+loadcsv amazon_co-ecommerce_sample.csv
+setstorecurrency GBP
+updateparity GBP 1.05
+listmanufacturers
+adddiscount PERCENTAGE 25 "25% Summer Sales"
+applydiscount PERCENTAGE 25
+savestore store5.bin
+setstorecurrency USD
+showproduct 60ca5f456176a27b44eef289edfc942e
+adddiscount FIXED 2 "2 USD discount"
+listproductsbymanufacturer Roco
+loadstore store5.bin
+listproductsbymanufacturer Not Available
+listcurrencies
+updateparity USD 0.85
+getstorecurrency
+listproducts
+showproduct 6c4062e5b0da136365915b470ec9d4a4
+listproductsbymanufacturer Not Available
+listcurrencies
+savecsv store_rulare5.csv
+calculatetotal 60ca5f456176a27b44eef289edfc942e 6c4062e5b0da136365915b470ec9d4a4
+setstorecurrency EUR
+listdiscounts
+savestore store5_eur.bin
+listdiscounts
+updateparity GBP 1.09
+listmanufacturers
+setstorecurrency GBP
+calculatetotal 60ca5f456176a27b44eef289edfc942e 6c4062e5b0da136365915b470ec9d4a4
+loadstore store5_eur.bin
+listcurrencies
+listproductsbymanufacturer Hornby
+getstorecurrency
+updateparity USD 0.8
+listcurrencies
+showproduct 60ca5f456176a27b44eef289edfc942e
+getstorecurrency
+updateparity GBP 1.2
+setstorecurrency GBP
+calculatetotal 60ca5f456176a27b44eef289edfc942e 6c4062e5b0da136365915b470ec9d4a4
+savestore store5_gbp.bin
+listproducts
+updateparity USD 0.86
+listcurrencies
+exit
+quit

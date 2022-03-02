@@ -1,0 +1,15 @@
+getstorecurrency
+addcurrency GBP £ 1.10
+addcurrency USD $ 0.82
+loadcsv amazon_co-ecommerce_sample.csv
+setstorecurrency GBP
+updateparity GBP 1.09
+listcurrencies
+adddiscount PERCENTAGE 30 "30% Black Friday"
+applydiscount PERCENTAGE 30
+listdiscounts
+savestore store2.bin
+setstorecurrency USD
+loadstore store2.bin
+listproductsbymanufacturer Hornby
+quit

@@ -1,0 +1,10 @@
+addcurrency GBP £ 1.10
+addcurrency USD $ 0.82
+listcurrencies
+loadcsv amazon_co-ecommerce_sample.csv
+savecsv store_prices_eur.csv
+setstorecurrency GBP
+savecsv store_prices_gbp.csv
+updateparity GBP 1.09
+listproducts
+exit

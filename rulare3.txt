@@ -1,0 +1,20 @@
+addcurrency GBP £ 1.10
+addcurrency USD $ 0.82
+listcurrencies
+loadcsv amazon_co-ecommerce_sample.csv
+adddiscount FIXED 15 "-15 EUR Newsletter"
+listdiscounts
+listmanufacturers
+setstorecurrency USD
+savecsv store_prices_usd.csv
+updateparity GBP 1.05
+listcurrencies
+listproducts
+showproduct eac7efa5dbd3d667f26eb3d3ab504464
+listproductsbymanufacturer Bachmann
+listdiscounts
+savestore store3.bin
+setstorecurrency EUR
+applydiscount PERCENTAGE 35
+listproducts
+exit
